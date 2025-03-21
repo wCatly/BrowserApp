@@ -67,8 +67,9 @@ def start_neo4j_container(password=DEFAULT_PASSWORD):
 
 def update_config_file(password=DEFAULT_PASSWORD):
     """Update the config.py file with the correct password."""
+    config_path = "src/config.py"  # Updated path to config.py
     try:
-        with open("config.py", "r") as f:
+        with open(config_path, "r") as f:
             config = f.read()
         
         # Update the password
@@ -83,12 +84,12 @@ def update_config_file(password=DEFAULT_PASSWORD):
                 if "USE_LOCAL_NEO4J" in line:
                     lines[i] = 'USE_LOCAL_NEO4J = True'
             
-            with open("config.py", "w") as f:
+            with open(config_path, "w") as f:
                 f.write("\n".join(lines))
             
-            print("Updated config.py with the local Neo4j password.")
+            print(f"Updated {config_path} with the local Neo4j password.")
     except Exception as e:
-        print(f"Error updating config.py: {e}")
+        print(f"Error updating {config_path}: {e}")
 
 def main():
     """Main function to set up Neo4j Docker container."""
