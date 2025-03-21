@@ -8,9 +8,9 @@ LOCAL_NEO4J_USER = "neo4j"
 LOCAL_NEO4J_PASSWORD = "password"  # Change this to your local Neo4j password
 
 # Neo4j Aura (cloud) configuration
-AURA_NEO4J_URI = "neo4j+s://4398494f.databases.neo4j.io"
+AURA_NEO4J_URI = ""
 AURA_NEO4J_USER = "neo4j"
-AURA_NEO4J_PASSWORD = "uzx0b_6Alf8QSj3vVPSTW7V_FaYflTJQ87vocC9jr94"
+AURA_NEO4J_PASSWORD = ""
 
 # Set active configuration based on USE_LOCAL_NEO4J setting
 if USE_LOCAL_NEO4J:
