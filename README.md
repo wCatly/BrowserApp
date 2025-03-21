@@ -178,7 +178,7 @@ Result: Automatically detects "drama" genre and returns top drama films
 
 ## Data
 
-The project uses the IMDB Top 1000 Movies dataset, which includes:
+The project uses the [IMDB Top 1000 Movies and TV Shows dataset from Kaggle](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows?resource=download), which includes:
 - Movie titles, release years, and ratings
 - Director and main cast information
 - Genre classifications
@@ -233,8 +233,5 @@ If vector search isn't working:
    pip install faiss-cpu --no-cache-dir
    ```
 
-## License
-
-[License information here]
 
  
