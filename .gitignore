@@ -29,11 +29,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# Data files
-data/movie_embeddings.index
-data/index_to_movie.pkl
-*.csv
-!data/imdb_top_1000.csv  # Keep the source dataset
 
 # Logs
 logs/
